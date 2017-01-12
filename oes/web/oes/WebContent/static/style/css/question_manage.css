@@ -1,0 +1,365 @@
+@charset "utf-8";
+/**
+* Question management page
+*/
+body {
+    background-color: #D2DAE3;
+}
+.top_nav {
+    height: 80px;
+    width: 1348px;
+    border: solid 1px;
+    position: relative;
+    background-color: #2E4358;
+}
+.top_nav .web_logo { 
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.top_nav .web_title {
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    color:#FFFFFF;
+    font-size: 24px;
+}
+.top_nav .language {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #FFFFFF;
+}
+.top_nav .logout {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    color: #FFFFFF;
+}
+.top_nav .username {
+    position: absolute;
+    right: 94px;
+    bottom: 10px;
+    color: #FFFFFF;
+}
+.top_nav .user_icon {
+    position: absolute;
+    right: 165px;
+    bottom: 10px;
+    color: #FFFFFF;
+}
+.question_content_div {
+    width: 1240px;
+    min-height: 550px;
+    margin: 30px auto 0px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.question_footer_div {
+    margin-top: 10px;
+    text-align: center;
+    height: 50px;
+}
+.question_content_div .left {
+    width: 200px;
+    height: 500px;
+    float: left;
+    border-right: solid #9D9D9D 1px;
+}
+.question_content_div .right {
+    float: right;
+    width: 1030px;
+    margin-bottom: 30px;
+}
+.question_tab_div {
+    width: 1350px;
+    height: 40px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.question_tab_div a {
+    color: #2E4358;
+}
+.question_tab_div li {
+    width: 220px;
+    float: left;
+    list-style: none;
+    line-height: 40px;
+    font-size: 18px;
+    color: #2E4358;
+    text-align: center;
+}
+.question_tab_div span {
+    float: left;
+    line-height: 40px;
+}
+.question_tab_div .question_management {
+    margin-left: 20px;
+}
+.question_tab_div .exam_management {
+    margin-left: 100px;
+}
+.quesion_manage_active {
+    background-color: #D2DAE3;
+}
+.quesion_list_active {
+    background-color: #2E4358;
+    font-size: 14px;
+}
+.quesion_list_active .active {
+    color: #FFFFFF;
+}
+.left ul {
+    float: left;
+    display: block;
+    margin-top: 50px;
+}
+.left a {
+    color: #2E4358;
+}
+.left li {
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: solid #2E4358 1px;
+}
+.right .question_list_content {
+    float: right;
+    border: solid 1px;
+    width: 980px;
+    min-height: 440px;
+    margin-top: 10px;
+    margin-right: 30px;
+    border: solid #2E4358 1px;
+    border-radius: 5px;
+}
+.search {
+    position: relative;
+}
+.right .search input {
+    border: solid #296793 1px;
+    border-radius: 5px;
+    margin-right: 30px;
+    height: 30px;
+    margin-top: 10px;
+    padding-right: 35px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: 160px;
+    padding-left: 10px;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.search_icon {
+    position: absolute;
+    right: 42px;
+    top: 15px;
+}
+.question_top {
+    width: 1030px;
+    float: left;
+}
+.question_top li, .question_list li {
+    height: 40px;
+    text-align: center;
+    vertical-align: center;
+    float: left;
+    line-height: 40px;
+    color:#0A0A0A;
+    border-bottom: solid 1px #2E4358;
+}
+.question_list li {
+    height: 30px;
+    line-height: 30px;
+}
+.question_list .question_index {
+    width: 100px;
+}
+.question_list .question_id {
+    width: 150px;
+    text-align: left;
+}
+.question_id {
+    width: 250px;
+}
+.question_id label {
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: 2px;
+    background-image: url("../../img/ICN_Decrese_10x15.png");
+    background-repeat: no-repeat;
+}
+.question_descripe {
+    width: 470px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.question_descripe a {
+    color: #296793;
+}
+.question_edit {
+    width: 140px;
+}
+.quesiton_operator {
+    width: 120px;
+}
+.pagination {
+    float: left;
+    margin-top: 40px;
+    margin-left: 340px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pagination a {
+    display: inline-block;
+    height: 20px;
+    font-size: 12px;
+    margin-top: 0px;
+    color: #5E5E5E;
+    line-height: 15px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.pagination input {
+    width: 20px;
+    height: 12px;
+    color: #FE9901;
+    border: solid 1px #5E5E5E;
+    text-align: center;
+}
+.pagination select {
+    width: 40px;
+    height: 15px;
+    font-size: 12px;
+    color: #FE9901;
+}
+.pagination label {
+    font-size: 12px;
+    color: #5E5E5E;
+}
+.pagination .active {
+    color: #FE9901;
+}
+.pagination button {
+    width: 24px;
+    height: 15px;
+    border: none;
+    background-color: #FE9901;
+    color: #FFFFFF;
+}
+.question_delete {
+     margin-bottom: 20px;
+}
+.question_delete button {
+    background-color: #FE9901;
+    border: none;
+    color: #FFFFFF;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+.question_dialog {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #2E4358;
+    left:50%;
+    top: 40%;
+    margin-left: -200px;
+    margin-top: -100px;
+    position: fixed;
+    z-index: 10000;
+    background-color: #FFFFFF;
+    display: none;
+}
+.question_dialog .close_btn {
+    width: 22px;
+    height: 22px;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-image: url("../../img/BTN_Close_16x16.png");
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+.question_dialog span {
+    text-align: center;
+    width: 400px;
+    font-size: 14px;
+    color: #0A0A0A;
+    margin-top: 70px;
+    display: block;
+}
+.question_dialog button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #FE9901;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.yes_btn {
+    margin-left: 105px;
+}
+.no_btn {
+    margin-left: 30px;
+}
+.success_flash_msg {
+    width:250px;
+    height: 40px;
+    background-color: #00ff40;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.error_flash_msg {
+    width: 250px;
+    height: 40px;
+    background-color: #FF0000;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.tip_flash_msg {
+    display: none;
+    width: 350px;
+    height: 40px;
+    background-color: #FF0000;
+    position: fixed;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.search_hidden_div {
+    display: none;
+}

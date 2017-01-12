@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Test016" id="0" name="QuestionControllerTest" package="com.malcolm.oes.controller" skipped="0" tests="1" time="8.5" timestamp="2016-08-23T01:45:08">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+          <property name="env.PROMPT" value="$P$G" />
+
+          <property name="os.name" value="Windows XP" />
+
+          <property name="env.FP_NO_HOST_CHECK" value="NO" />
+
+          <property name="cobertura.home" value="D:\j2ee\cobertura-2.0.3" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_51\jre\classes" />
+
+          <property name="env.COMPUTERNAME" value="TEST016" />
+
+          <property name="env.ALLUSERSPROFILE" value="C:\Documents and Settings\All Users" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="java.runtime.version" value="1.7.0_51-b13" />
+
+          <property name="env.HOMEPATH" value="\Documents and Settings\malcolm.li" />
+
+          <property name="cobertura.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura" />
+
+          <property name="user.name" value="Malcolm.Li" />
+
+          <property name="build.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build" />
+
+          <property name="ant.file.type.oes" value="file" />
+
+          <property name="user.language" value="zh" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin" />
+
+          <property name="build.test.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes" />
+
+          <property name="build.test.report" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report" />
+
+          <property name="ant.project.default-target" value="run-test" />
+
+          <property name="build.war.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\war" />
+
+          <property name="ant.project.name" value="oes" />
+
+          <property name="java.version" value="1.7.0_51" />
+
+          <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 13, GenuineIntel" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.TEMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.arch.data.model" value="32" />
+
+          <property name="test.src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\test" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+          <property name="env.HOMEDRIVE" value="C:" />
+
+          <property name="sun.jnu.encoding" value="GB18030" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="test.lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="user.country" value="CN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_51\jre" />
+
+          <property name="env.APPDATA" value="C:\Documents and Settings\malcolm.li\Application Data" />
+
+          <property name="java.vm.info" value="mixed mode, sharing" />
+
+          <property name="env.CATALINA_HOME" value="D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54" />
+
+          <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+
+          <property name="env.OS" value="Windows_NT" />
+
+          <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+
+          <property name="ant.file" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="os.version" value="5.1" />
+
+          <property name="cobertura.class.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="24.51-b03" />
+
+          <property name="user.variant" value="" />
+
+          <property name="env.USERPROFILE" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="web.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent" />
+
+          <property name="ant.library.dir" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib" />
+
+          <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_51" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="env.TMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+
+          <property name="user.home" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="env.SESSIONNAME" value="Console" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.CLASSPATH" value=".;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;;." />
+
+          <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+
+          <property name="env.USERDNSDOMAIN" value="YZ.AUGMENTUM.COM.CN" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="cobertura.lib.dir" value="D:\j2ee\cobertura-2.0.3\lib" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.1 compiled on May 15 2013" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.malcolm.oes.controller.QuestionControllerTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report\TEST-com.malcolm.oes.controller.QuestionControllerTest.xml crashfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junitvmwatcher898616352795369588.properties propsfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junit1266727990733067520.properties" />
+
+          <property name="java.class.path" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aopalliance-1.0.0.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aspectjweaver-1.5.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\c3p0-0.9.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-codec-1.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-httpclient-3.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-lang-2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\easymock-3.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\hamcrest-all-1.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\jackson-all-1.7.6.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\log4j-1.2.15.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mchange-commons-java-0.2.6.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-3.2.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-spring-1.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mysql-connector-java-5.1.25.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\org.json.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\servlet-api-2.4.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aop-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aspects-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-beans-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-support-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-core-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-expression-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-tomcat-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jdbc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jms-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-orm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-oxm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-tx-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-web-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-webmvc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\standard-1.1.2.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\annotations-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ant.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ha.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-tribes.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\ecj-P20140317-1600.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\el-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper-el.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jsp-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\servlet-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-coyote.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-dbcp.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-es.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-fr.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-ja.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-jdbc.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-util.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat7-websocket.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\websocket-api.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\cobertura-2.0.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\junit.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\spring-test-3.2.3.RELEASE.jar;D:\j2ee\cobertura-2.0.3\lib\asm-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-analysis-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-commons-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-tree-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-util-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\dom4j-1.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\icu4j-2.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\jaxen-1.1-beta-8.jar;D:\j2ee\cobertura-2.0.3\lib\jdom-1.0.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-util-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\log4j-1.2.9.jar;D:\j2ee\cobertura-2.0.3\lib\oro-2.0.8.jar;D:\j2ee\cobertura-2.0.3\lib\servlet-api-2.5-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\tagsoup-0.9.7.jar;D:\j2ee\cobertura-2.0.3\lib\xmlParserAPIs-2.6.2.jar;D:\j2ee\cobertura-2.0.3\lib\xom-1.0b3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-launcher.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit4.jar" />
+
+          <property name="cobertura.html.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\html" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.doc.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\doc" />
+
+          <property name="env.LOGONSERVER" value="\\AD" />
+
+          <property name="env.windir" value="C:\WINDOWS" />
+
+          <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="build.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes" />
+
+          <property name="sun.os.patch.level" value="Service Pack 3" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="env.ProgramFiles" value="C:\Program Files" />
+
+          <property name="env.ANT_HOME" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="env.PROCESSOR_REVISION" value="0f0d" />
+
+          <property name="eclipse.pdebuild.home" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+
+          <property name="java.io.tmpdir" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SystemRoot" value="C:\WINDOWS" />
+
+          <property name="conf.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\conf" />
+
+          <property name="os.arch" value="x86" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="build.test.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+          <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH" />
+
+          <property name="env.Path" value="C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;" />
+
+          <property name="basedir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="ant.file.oes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="ant.core.lib" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar" />
+
+          <property name="env.USERNAME" value="Malcolm.Li" />
+
+          <property name="env.SystemDrive" value="C:" />
+
+          <property name="file.encoding" value="GB18030" />
+
+          <property name="env.USERDOMAIN" value="YZ" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\src" />
+
+          <property name="ant.project.invoked-targets" value="run-test" />
+
+          <property name="env.PROCESSOR_LEVEL" value="6" />
+
+      </properties>
+
+      <testcase classname="com.malcolm.oes.controller.QuestionControllerTest" name="testSaveQuestion" time="7.937" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.", exception -> java.io.FileNotFoundException: Resource not found at path '/mchange-commons.properties'.]
+com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/' could not be found. Skipping.", exception -> java.io.FileNotFoundException: No resource available at '/reference.conf,/application.conf,/application.json,/application.properties,/' for HOCON identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/'. Also HOCON lib (typesafe-config) is not available.]
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Test016" id="1" name="UserControllerTest" package="com.malcolm.oes.controller" skipped="0" tests="1" time="5.328" timestamp="2016-08-23T01:45:19">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+          <property name="env.PROMPT" value="$P$G" />
+
+          <property name="os.name" value="Windows XP" />
+
+          <property name="env.FP_NO_HOST_CHECK" value="NO" />
+
+          <property name="cobertura.home" value="D:\j2ee\cobertura-2.0.3" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_51\jre\classes" />
+
+          <property name="env.COMPUTERNAME" value="TEST016" />
+
+          <property name="env.ALLUSERSPROFILE" value="C:\Documents and Settings\All Users" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="java.runtime.version" value="1.7.0_51-b13" />
+
+          <property name="env.HOMEPATH" value="\Documents and Settings\malcolm.li" />
+
+          <property name="cobertura.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura" />
+
+          <property name="user.name" value="Malcolm.Li" />
+
+          <property name="build.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build" />
+
+          <property name="ant.file.type.oes" value="file" />
+
+          <property name="user.language" value="zh" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin" />
+
+          <property name="build.test.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes" />
+
+          <property name="build.test.report" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report" />
+
+          <property name="ant.project.default-target" value="run-test" />
+
+          <property name="build.war.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\war" />
+
+          <property name="ant.project.name" value="oes" />
+
+          <property name="java.version" value="1.7.0_51" />
+
+          <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 13, GenuineIntel" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.TEMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.arch.data.model" value="32" />
+
+          <property name="test.src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\test" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+          <property name="env.HOMEDRIVE" value="C:" />
+
+          <property name="sun.jnu.encoding" value="GB18030" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="test.lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="user.country" value="CN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_51\jre" />
+
+          <property name="env.APPDATA" value="C:\Documents and Settings\malcolm.li\Application Data" />
+
+          <property name="java.vm.info" value="mixed mode, sharing" />
+
+          <property name="env.CATALINA_HOME" value="D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54" />
+
+          <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+
+          <property name="env.OS" value="Windows_NT" />
+
+          <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+
+          <property name="ant.file" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="os.version" value="5.1" />
+
+          <property name="cobertura.class.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="24.51-b03" />
+
+          <property name="user.variant" value="" />
+
+          <property name="env.USERPROFILE" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="web.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent" />
+
+          <property name="ant.library.dir" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib" />
+
+          <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_51" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="env.TMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+
+          <property name="user.home" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="env.SESSIONNAME" value="Console" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.CLASSPATH" value=".;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;;." />
+
+          <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+
+          <property name="env.USERDNSDOMAIN" value="YZ.AUGMENTUM.COM.CN" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="cobertura.lib.dir" value="D:\j2ee\cobertura-2.0.3\lib" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.1 compiled on May 15 2013" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.malcolm.oes.controller.UserControllerTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report\TEST-com.malcolm.oes.controller.UserControllerTest.xml crashfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junitvmwatcher572503212402785371.properties propsfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junit1574797607441569281.properties" />
+
+          <property name="java.class.path" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aopalliance-1.0.0.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aspectjweaver-1.5.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\c3p0-0.9.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-codec-1.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-httpclient-3.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-lang-2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\easymock-3.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\hamcrest-all-1.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\jackson-all-1.7.6.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\log4j-1.2.15.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mchange-commons-java-0.2.6.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-3.2.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-spring-1.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mysql-connector-java-5.1.25.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\org.json.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\servlet-api-2.4.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aop-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aspects-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-beans-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-support-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-core-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-expression-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-tomcat-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jdbc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jms-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-orm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-oxm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-tx-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-web-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-webmvc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\standard-1.1.2.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\annotations-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ant.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ha.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-tribes.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\ecj-P20140317-1600.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\el-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper-el.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jsp-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\servlet-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-coyote.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-dbcp.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-es.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-fr.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-ja.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-jdbc.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-util.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat7-websocket.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\websocket-api.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\cobertura-2.0.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\junit.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\spring-test-3.2.3.RELEASE.jar;D:\j2ee\cobertura-2.0.3\lib\asm-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-analysis-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-commons-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-tree-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-util-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\dom4j-1.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\icu4j-2.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\jaxen-1.1-beta-8.jar;D:\j2ee\cobertura-2.0.3\lib\jdom-1.0.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-util-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\log4j-1.2.9.jar;D:\j2ee\cobertura-2.0.3\lib\oro-2.0.8.jar;D:\j2ee\cobertura-2.0.3\lib\servlet-api-2.5-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\tagsoup-0.9.7.jar;D:\j2ee\cobertura-2.0.3\lib\xmlParserAPIs-2.6.2.jar;D:\j2ee\cobertura-2.0.3\lib\xom-1.0b3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-launcher.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit4.jar" />
+
+          <property name="cobertura.html.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\html" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.doc.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\doc" />
+
+          <property name="env.LOGONSERVER" value="\\AD" />
+
+          <property name="env.windir" value="C:\WINDOWS" />
+
+          <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="build.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes" />
+
+          <property name="sun.os.patch.level" value="Service Pack 3" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="env.ProgramFiles" value="C:\Program Files" />
+
+          <property name="env.ANT_HOME" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="env.PROCESSOR_REVISION" value="0f0d" />
+
+          <property name="eclipse.pdebuild.home" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+
+          <property name="java.io.tmpdir" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SystemRoot" value="C:\WINDOWS" />
+
+          <property name="conf.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\conf" />
+
+          <property name="os.arch" value="x86" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="build.test.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+          <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH" />
+
+          <property name="env.Path" value="C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;" />
+
+          <property name="basedir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="ant.file.oes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="ant.core.lib" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar" />
+
+          <property name="env.USERNAME" value="Malcolm.Li" />
+
+          <property name="env.SystemDrive" value="C:" />
+
+          <property name="file.encoding" value="GB18030" />
+
+          <property name="env.USERDOMAIN" value="YZ" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\src" />
+
+          <property name="ant.project.invoked-targets" value="run-test" />
+
+          <property name="env.PROCESSOR_LEVEL" value="6" />
+
+      </properties>
+
+      <testcase classname="com.malcolm.oes.controller.UserControllerTest" name="testLogin" time="5.218" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.", exception -> java.io.FileNotFoundException: Resource not found at path '/mchange-commons.properties'.]
+com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/' could not be found. Skipping.", exception -> java.io.FileNotFoundException: No resource available at '/reference.conf,/application.conf,/application.json,/application.properties,/' for HOCON identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/'. Also HOCON lib (typesafe-config) is not available.]
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Test016" id="2" name="ExamServiceTest" package="com.malcolm.oes.service" skipped="0" tests="9" time="5.469" timestamp="2016-08-23T01:45:26">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+          <property name="env.PROMPT" value="$P$G" />
+
+          <property name="os.name" value="Windows XP" />
+
+          <property name="env.FP_NO_HOST_CHECK" value="NO" />
+
+          <property name="cobertura.home" value="D:\j2ee\cobertura-2.0.3" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_51\jre\classes" />
+
+          <property name="env.COMPUTERNAME" value="TEST016" />
+
+          <property name="env.ALLUSERSPROFILE" value="C:\Documents and Settings\All Users" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="java.runtime.version" value="1.7.0_51-b13" />
+
+          <property name="env.HOMEPATH" value="\Documents and Settings\malcolm.li" />
+
+          <property name="cobertura.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura" />
+
+          <property name="user.name" value="Malcolm.Li" />
+
+          <property name="build.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build" />
+
+          <property name="ant.file.type.oes" value="file" />
+
+          <property name="user.language" value="zh" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin" />
+
+          <property name="build.test.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes" />
+
+          <property name="build.test.report" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report" />
+
+          <property name="ant.project.default-target" value="run-test" />
+
+          <property name="build.war.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\war" />
+
+          <property name="ant.project.name" value="oes" />
+
+          <property name="java.version" value="1.7.0_51" />
+
+          <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 13, GenuineIntel" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.TEMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.arch.data.model" value="32" />
+
+          <property name="test.src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\test" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+          <property name="env.HOMEDRIVE" value="C:" />
+
+          <property name="sun.jnu.encoding" value="GB18030" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="test.lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="user.country" value="CN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_51\jre" />
+
+          <property name="env.APPDATA" value="C:\Documents and Settings\malcolm.li\Application Data" />
+
+          <property name="java.vm.info" value="mixed mode, sharing" />
+
+          <property name="env.CATALINA_HOME" value="D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54" />
+
+          <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+
+          <property name="env.OS" value="Windows_NT" />
+
+          <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+
+          <property name="ant.file" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="os.version" value="5.1" />
+
+          <property name="cobertura.class.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="24.51-b03" />
+
+          <property name="user.variant" value="" />
+
+          <property name="env.USERPROFILE" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="web.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent" />
+
+          <property name="ant.library.dir" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib" />
+
+          <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_51" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="env.TMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+
+          <property name="user.home" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="env.SESSIONNAME" value="Console" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.CLASSPATH" value=".;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;;." />
+
+          <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+
+          <property name="env.USERDNSDOMAIN" value="YZ.AUGMENTUM.COM.CN" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="cobertura.lib.dir" value="D:\j2ee\cobertura-2.0.3\lib" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.1 compiled on May 15 2013" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.malcolm.oes.service.ExamServiceTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report\TEST-com.malcolm.oes.service.ExamServiceTest.xml crashfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junitvmwatcher8273772709796617478.properties propsfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junit8084964679547401978.properties" />
+
+          <property name="java.class.path" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aopalliance-1.0.0.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aspectjweaver-1.5.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\c3p0-0.9.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-codec-1.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-httpclient-3.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-lang-2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\easymock-3.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\hamcrest-all-1.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\jackson-all-1.7.6.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\log4j-1.2.15.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mchange-commons-java-0.2.6.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-3.2.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-spring-1.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mysql-connector-java-5.1.25.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\org.json.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\servlet-api-2.4.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aop-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aspects-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-beans-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-support-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-core-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-expression-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-tomcat-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jdbc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jms-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-orm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-oxm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-tx-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-web-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-webmvc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\standard-1.1.2.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\annotations-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ant.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ha.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-tribes.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\ecj-P20140317-1600.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\el-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper-el.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jsp-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\servlet-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-coyote.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-dbcp.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-es.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-fr.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-ja.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-jdbc.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-util.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat7-websocket.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\websocket-api.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\cobertura-2.0.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\junit.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\spring-test-3.2.3.RELEASE.jar;D:\j2ee\cobertura-2.0.3\lib\asm-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-analysis-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-commons-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-tree-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-util-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\dom4j-1.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\icu4j-2.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\jaxen-1.1-beta-8.jar;D:\j2ee\cobertura-2.0.3\lib\jdom-1.0.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-util-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\log4j-1.2.9.jar;D:\j2ee\cobertura-2.0.3\lib\oro-2.0.8.jar;D:\j2ee\cobertura-2.0.3\lib\servlet-api-2.5-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\tagsoup-0.9.7.jar;D:\j2ee\cobertura-2.0.3\lib\xmlParserAPIs-2.6.2.jar;D:\j2ee\cobertura-2.0.3\lib\xom-1.0b3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-launcher.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit4.jar" />
+
+          <property name="cobertura.html.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\html" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.doc.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\doc" />
+
+          <property name="env.LOGONSERVER" value="\\AD" />
+
+          <property name="env.windir" value="C:\WINDOWS" />
+
+          <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="build.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes" />
+
+          <property name="sun.os.patch.level" value="Service Pack 3" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="env.ProgramFiles" value="C:\Program Files" />
+
+          <property name="env.ANT_HOME" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="env.PROCESSOR_REVISION" value="0f0d" />
+
+          <property name="eclipse.pdebuild.home" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+
+          <property name="java.io.tmpdir" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SystemRoot" value="C:\WINDOWS" />
+
+          <property name="conf.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\conf" />
+
+          <property name="os.arch" value="x86" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="build.test.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+          <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH" />
+
+          <property name="env.Path" value="C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;" />
+
+          <property name="basedir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="ant.file.oes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="ant.core.lib" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar" />
+
+          <property name="env.USERNAME" value="Malcolm.Li" />
+
+          <property name="env.SystemDrive" value="C:" />
+
+          <property name="file.encoding" value="GB18030" />
+
+          <property name="env.USERDOMAIN" value="YZ" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\src" />
+
+          <property name="ant.project.invoked-targets" value="run-test" />
+
+          <property name="env.PROCESSOR_LEVEL" value="6" />
+
+      </properties>
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testdeleteExamByIdsBadIds" time="4.906" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testfinExamList" time="0.313" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testSaveExamBadExam" time="0.015" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testdeleteExamByIds" time="0.0" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testSaveExamDraftBadIsDraft" time="0.016" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testSaveExam" time="0.094" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testSaveExamDraftBadExam" time="0.0" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testcreateExamDraft" time="0.015" />
+
+      <testcase classname="com.malcolm.oes.service.ExamServiceTest" name="testSaveExamBadIsDraft" time="0.0" />
+
+      <system-out><![CDATA[5
+]]></system-out>
+
+      <system-err><![CDATA[com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.", exception -> java.io.FileNotFoundException: Resource not found at path '/mchange-commons.properties'.]
+com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/' could not be found. Skipping.", exception -> java.io.FileNotFoundException: No resource available at '/reference.conf,/application.conf,/application.json,/application.properties,/' for HOCON identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/'. Also HOCON lib (typesafe-config) is not available.]
+com.malcolm.oes.exception.ParameterException
+	at com.malcolm.oes.service.impl.ExamServiceImpl.deleteExamByIds(ExamServiceImpl.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at com.malcolm.oes.advice.LogMethodTime.invoke(LogMethodTime.java:20)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy19.deleteExamByIds(Unknown Source)
+	at com.malcolm.oes.service.ExamServiceTest.testdeleteExamByIdsBadIds(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:523)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1063)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:914)
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Test016" id="3" name="QuestionServiceTest" package="com.malcolm.oes.service" skipped="0" tests="17" time="5.375" timestamp="2016-08-23T01:45:34">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+          <property name="env.PROMPT" value="$P$G" />
+
+          <property name="os.name" value="Windows XP" />
+
+          <property name="env.FP_NO_HOST_CHECK" value="NO" />
+
+          <property name="cobertura.home" value="D:\j2ee\cobertura-2.0.3" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_51\jre\classes" />
+
+          <property name="env.COMPUTERNAME" value="TEST016" />
+
+          <property name="env.ALLUSERSPROFILE" value="C:\Documents and Settings\All Users" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="java.runtime.version" value="1.7.0_51-b13" />
+
+          <property name="env.HOMEPATH" value="\Documents and Settings\malcolm.li" />
+
+          <property name="cobertura.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura" />
+
+          <property name="user.name" value="Malcolm.Li" />
+
+          <property name="build.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build" />
+
+          <property name="ant.file.type.oes" value="file" />
+
+          <property name="user.language" value="zh" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin" />
+
+          <property name="build.test.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes" />
+
+          <property name="build.test.report" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report" />
+
+          <property name="ant.project.default-target" value="run-test" />
+
+          <property name="build.war.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\war" />
+
+          <property name="ant.project.name" value="oes" />
+
+          <property name="java.version" value="1.7.0_51" />
+
+          <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 13, GenuineIntel" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.TEMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.arch.data.model" value="32" />
+
+          <property name="test.src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\test" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+          <property name="env.HOMEDRIVE" value="C:" />
+
+          <property name="sun.jnu.encoding" value="GB18030" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="test.lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="user.country" value="CN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_51\jre" />
+
+          <property name="env.APPDATA" value="C:\Documents and Settings\malcolm.li\Application Data" />
+
+          <property name="java.vm.info" value="mixed mode, sharing" />
+
+          <property name="env.CATALINA_HOME" value="D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54" />
+
+          <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+
+          <property name="env.OS" value="Windows_NT" />
+
+          <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+
+          <property name="ant.file" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="os.version" value="5.1" />
+
+          <property name="cobertura.class.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="24.51-b03" />
+
+          <property name="user.variant" value="" />
+
+          <property name="env.USERPROFILE" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="web.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent" />
+
+          <property name="ant.library.dir" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib" />
+
+          <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_51" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="env.TMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+
+          <property name="user.home" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="env.SESSIONNAME" value="Console" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.CLASSPATH" value=".;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;;." />
+
+          <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+
+          <property name="env.USERDNSDOMAIN" value="YZ.AUGMENTUM.COM.CN" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="cobertura.lib.dir" value="D:\j2ee\cobertura-2.0.3\lib" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.1 compiled on May 15 2013" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.malcolm.oes.service.QuestionServiceTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report\TEST-com.malcolm.oes.service.QuestionServiceTest.xml crashfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junitvmwatcher5873229450891771571.properties propsfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junit5589732250794737354.properties" />
+
+          <property name="java.class.path" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aopalliance-1.0.0.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aspectjweaver-1.5.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\c3p0-0.9.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-codec-1.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-httpclient-3.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-lang-2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\easymock-3.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\hamcrest-all-1.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\jackson-all-1.7.6.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\log4j-1.2.15.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mchange-commons-java-0.2.6.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-3.2.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-spring-1.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mysql-connector-java-5.1.25.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\org.json.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\servlet-api-2.4.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aop-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aspects-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-beans-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-support-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-core-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-expression-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-tomcat-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jdbc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jms-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-orm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-oxm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-tx-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-web-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-webmvc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\standard-1.1.2.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\annotations-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ant.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ha.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-tribes.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\ecj-P20140317-1600.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\el-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper-el.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jsp-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\servlet-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-coyote.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-dbcp.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-es.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-fr.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-ja.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-jdbc.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-util.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat7-websocket.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\websocket-api.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\cobertura-2.0.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\junit.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\spring-test-3.2.3.RELEASE.jar;D:\j2ee\cobertura-2.0.3\lib\asm-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-analysis-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-commons-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-tree-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-util-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\dom4j-1.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\icu4j-2.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\jaxen-1.1-beta-8.jar;D:\j2ee\cobertura-2.0.3\lib\jdom-1.0.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-util-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\log4j-1.2.9.jar;D:\j2ee\cobertura-2.0.3\lib\oro-2.0.8.jar;D:\j2ee\cobertura-2.0.3\lib\servlet-api-2.5-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\tagsoup-0.9.7.jar;D:\j2ee\cobertura-2.0.3\lib\xmlParserAPIs-2.6.2.jar;D:\j2ee\cobertura-2.0.3\lib\xom-1.0b3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-launcher.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit4.jar" />
+
+          <property name="cobertura.html.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\html" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.doc.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\doc" />
+
+          <property name="env.LOGONSERVER" value="\\AD" />
+
+          <property name="env.windir" value="C:\WINDOWS" />
+
+          <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="build.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes" />
+
+          <property name="sun.os.patch.level" value="Service Pack 3" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="env.ProgramFiles" value="C:\Program Files" />
+
+          <property name="env.ANT_HOME" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="env.PROCESSOR_REVISION" value="0f0d" />
+
+          <property name="eclipse.pdebuild.home" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+
+          <property name="java.io.tmpdir" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SystemRoot" value="C:\WINDOWS" />
+
+          <property name="conf.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\conf" />
+
+          <property name="os.arch" value="x86" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="build.test.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+          <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH" />
+
+          <property name="env.Path" value="C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;" />
+
+          <property name="basedir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="ant.file.oes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="ant.core.lib" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar" />
+
+          <property name="env.USERNAME" value="Malcolm.Li" />
+
+          <property name="env.SystemDrive" value="C:" />
+
+          <property name="file.encoding" value="GB18030" />
+
+          <property name="env.USERDOMAIN" value="YZ" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\src" />
+
+          <property name="ant.project.invoked-targets" value="run-test" />
+
+          <property name="env.PROCESSOR_LEVEL" value="6" />
+
+      </properties>
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testGetQuestionById" time="5.015" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testFindQuestioinListByKeyword" time="0.078" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testFindQuestionList" time="0.016" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testDeleteQuestionByWrongId" time="0.015" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testSaveQuestion" time="0.016" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testSaveEditQuestion" time="0.016" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testSaveEditQuestionBadQuestion" time="0.015" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testDeleteQuestionByIds" time="0.016" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testSaveQuestionBadUserId" time="0.0" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testSaveQuestionBadParameter" time="0.016" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testDeleteQuestionByWrongIds" time="0.0" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testGetQuestionByIdBadId" time="0.015" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testGetQuestionByIdEmptyId" time="0.016" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testSaveEditQuestionBadId" time="0.015" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testVerifyQuestionId" time="0.0" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="verifyQuestionQuantity" time="0.0" />
+
+      <testcase classname="com.malcolm.oes.service.QuestionServiceTest" name="testDeleteQuestionByIdsEmptyIds" time="0.016" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.", exception -> java.io.FileNotFoundException: Resource not found at path '/mchange-commons.properties'.]
+com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/' could not be found. Skipping.", exception -> java.io.FileNotFoundException: No resource available at '/reference.conf,/application.conf,/application.json,/application.properties,/' for HOCON identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/'. Also HOCON lib (typesafe-config) is not available.]
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Test016" id="4" name="UserServiceTest" package="com.malcolm.oes.service" skipped="0" tests="4" time="5.484" timestamp="2016-08-23T01:45:42">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+          <property name="env.PROMPT" value="$P$G" />
+
+          <property name="os.name" value="Windows XP" />
+
+          <property name="env.FP_NO_HOST_CHECK" value="NO" />
+
+          <property name="cobertura.home" value="D:\j2ee\cobertura-2.0.3" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_51\jre\classes" />
+
+          <property name="env.COMPUTERNAME" value="TEST016" />
+
+          <property name="env.ALLUSERSPROFILE" value="C:\Documents and Settings\All Users" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="java.runtime.version" value="1.7.0_51-b13" />
+
+          <property name="env.HOMEPATH" value="\Documents and Settings\malcolm.li" />
+
+          <property name="cobertura.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura" />
+
+          <property name="user.name" value="Malcolm.Li" />
+
+          <property name="build.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build" />
+
+          <property name="ant.file.type.oes" value="file" />
+
+          <property name="user.language" value="zh" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin" />
+
+          <property name="build.test.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes" />
+
+          <property name="build.test.report" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report" />
+
+          <property name="ant.project.default-target" value="run-test" />
+
+          <property name="build.war.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\war" />
+
+          <property name="ant.project.name" value="oes" />
+
+          <property name="java.version" value="1.7.0_51" />
+
+          <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 13, GenuineIntel" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.TEMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.arch.data.model" value="32" />
+
+          <property name="test.src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\test" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+          <property name="env.HOMEDRIVE" value="C:" />
+
+          <property name="sun.jnu.encoding" value="GB18030" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="test.lib.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="user.country" value="CN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_51\jre" />
+
+          <property name="env.APPDATA" value="C:\Documents and Settings\malcolm.li\Application Data" />
+
+          <property name="java.vm.info" value="mixed mode, sharing" />
+
+          <property name="env.CATALINA_HOME" value="D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54" />
+
+          <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+
+          <property name="env.OS" value="Windows_NT" />
+
+          <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+
+          <property name="ant.file" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="os.version" value="5.1" />
+
+          <property name="cobertura.class.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="24.51-b03" />
+
+          <property name="user.variant" value="" />
+
+          <property name="env.USERPROFILE" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="web.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent" />
+
+          <property name="ant.library.dir" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib" />
+
+          <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_51" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="env.TMP" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+
+          <property name="user.home" value="C:\Documents and Settings\malcolm.li" />
+
+          <property name="env.SESSIONNAME" value="Console" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.CLASSPATH" value=".;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;;." />
+
+          <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+
+          <property name="env.USERDNSDOMAIN" value="YZ.AUGMENTUM.COM.CN" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="cobertura.lib.dir" value="D:\j2ee\cobertura-2.0.3\lib" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.1 compiled on May 15 2013" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.malcolm.oes.service.UserServiceTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\report\TEST-com.malcolm.oes.service.UserServiceTest.xml crashfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junitvmwatcher3356736033336046522.properties propsfile=C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\junit4119951151089068823.properties" />
+
+          <property name="java.class.path" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\class;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test\classes;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aopalliance-1.0.0.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\aspectjweaver-1.5.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\c3p0-0.9.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-codec-1.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-httpclient-3.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-lang-2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\easymock-3.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\hamcrest-all-1.2.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\jackson-all-1.7.6.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\log4j-1.2.15.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mchange-commons-java-0.2.6.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-3.2.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mybatis-spring-1.2.1.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\mysql-connector-java-5.1.25.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\org.json.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\servlet-api-2.4.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aop-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-aspects-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-beans-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-context-support-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-core-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-expression-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-instrument-tomcat-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jdbc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-jms-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-orm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-oxm-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-tx-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-web-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\spring-webmvc-3.2.3.RELEASE.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\WebContent\WEB-INF\lib\standard-1.1.2.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\annotations-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ant.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-ha.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina-tribes.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\catalina.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\ecj-P20140317-1600.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\el-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper-el.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jasper.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\jsp-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\servlet-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-api.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-coyote.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-dbcp.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-es.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-fr.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-i18n-ja.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-jdbc.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat-util.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\tomcat7-websocket.jar;D:\j2ee\tomcat\apache-tomcat-7.0.54\apache-tomcat-7.0.54\lib\websocket-api.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\cobertura-2.0.3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\junit.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\lib\spring-test-3.2.3.RELEASE.jar;D:\j2ee\cobertura-2.0.3\lib\asm-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-analysis-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-commons-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-tree-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\asm-util-4.1.jar;D:\j2ee\cobertura-2.0.3\lib\dom4j-1.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\icu4j-2.6.1.jar;D:\j2ee\cobertura-2.0.3\lib\jaxen-1.1-beta-8.jar;D:\j2ee\cobertura-2.0.3\lib\jdom-1.0.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\jetty-util-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\log4j-1.2.9.jar;D:\j2ee\cobertura-2.0.3\lib\oro-2.0.8.jar;D:\j2ee\cobertura-2.0.3\lib\servlet-api-2.5-6.1.14.jar;D:\j2ee\cobertura-2.0.3\lib\tagsoup-0.9.7.jar;D:\j2ee\cobertura-2.0.3\lib\xmlParserAPIs-2.6.2.jar;D:\j2ee\cobertura-2.0.3\lib\xom-1.0b3.jar;C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes;C:\Program Files\Java\jdk1.7.0_51\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-launcher.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit.jar;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant-junit4.jar" />
+
+          <property name="cobertura.html.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\cobertura\html" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.doc.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\doc" />
+
+          <property name="env.LOGONSERVER" value="\\AD" />
+
+          <property name="env.windir" value="C:\WINDOWS" />
+
+          <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="build.classes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\classes" />
+
+          <property name="sun.os.patch.level" value="Service Pack 3" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="env.ProgramFiles" value="C:\Program Files" />
+
+          <property name="env.ANT_HOME" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1" />
+
+          <property name="env.PROCESSOR_REVISION" value="0f0d" />
+
+          <property name="eclipse.pdebuild.home" value="/D:/j2ee/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+
+          <property name="java.io.tmpdir" value="C:\DOCUME~1\malcolm.li\LOCALS~1\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SystemRoot" value="C:\WINDOWS" />
+
+          <property name="conf.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\conf" />
+
+          <property name="os.arch" value="x86" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="build.test.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build\test" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+          <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH" />
+
+          <property name="env.Path" value="C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Java\jdk1.7.0_51\jre\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;D:\j2ee\eclipse-jee-luna-SR2-win32\eclipse;" />
+
+          <property name="basedir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes" />
+
+          <property name="ant.file.oes" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\build.xml" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="ant.core.lib" value="D:\j2ee\apache-ant-1.9.1-bin\apache-ant-1.9.1\lib\ant.jar" />
+
+          <property name="env.USERNAME" value="Malcolm.Li" />
+
+          <property name="env.SystemDrive" value="C:" />
+
+          <property name="file.encoding" value="GB18030" />
+
+          <property name="env.USERDOMAIN" value="YZ" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="src.dir" value="C:\Documents and Settings\malcolm.li\project\YZDEVFRESH20160718\web\oes\src" />
+
+          <property name="ant.project.invoked-targets" value="run-test" />
+
+          <property name="env.PROCESSOR_LEVEL" value="6" />
+
+      </properties>
+
+      <testcase classname="com.malcolm.oes.service.UserServiceTest" name="testWrongUserNamePassword" time="5.11" />
+
+      <testcase classname="com.malcolm.oes.service.UserServiceTest" name="testRightUserNamePassword" time="0.203" />
+
+      <testcase classname="com.malcolm.oes.service.UserServiceTest" name="testNotExistUserName" time="0.0" />
+
+      <testcase classname="com.malcolm.oes.service.UserServiceTest" name="testWrongPassword" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.", exception -> java.io.FileNotFoundException: Resource not found at path '/mchange-commons.properties'.]
+com.mchange.v2.cfg.DelayedLogItem [ level -> FINE, text -> "The configuration file for resource identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/' could not be found. Skipping.", exception -> java.io.FileNotFoundException: No resource available at '/reference.conf,/application.conf,/application.json,/application.properties,/' for HOCON identifier 'hocon:/reference.conf,/application.conf,/application.json,/application.properties,/'. Also HOCON lib (typesafe-config) is not available.]
+]]></system-err>
+
+  </testsuite>
+</testsuites>

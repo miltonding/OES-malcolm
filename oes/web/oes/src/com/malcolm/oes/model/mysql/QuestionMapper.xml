@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.malcolm.oes.model.Question">
+
+    <resultMap type="Question" id="questionMap">
+        <id column="id" property="id"/>
+        <result column="question_name" property="questionTitle"/>
+        <result column="question_id" property="questionId"/>
+        <result column="answer_a" property="answerA"/>
+        <result column="answer_b" property="answerB"/>
+        <result column="answer_c" property="answerC"/>
+        <result column="answer_d" property="answerD"/>
+        <result column="question_answer" property="answer"/>
+        <result column="is_deleted" property="status"/>
+        <result column="is_used" property="isUsed"/>
+    </resultMap>
+
+    <select id="findQuestionList" parameterType="com.malcolm.oes.model.PaginationVo" resultMap="questionMap">
+        <![CDATA[
+            SELECT
+                id, question_id,
+                question_name
+            FROM
+                question
+            WHERE
+                is_deleted = 0
+            ORDER BY
+                question_id ${currentOrder}
+            LIMIT
+                #{pagination.startRecord},
+                #{pagination.pageSize}
+        ]]>
+    </select>
+
+    <select id="findQuestioinListByKeyword" parameterType="com.malcolm.oes.model.PaginationVo" resultMap="questionMap">
+        <![CDATA[
+            SELECT
+                id, question_id, question_name
+            FROM
+                question
+            WHERE
+                is_deleted = 0
+            AND
+                (
+                    question_id
+                LIKE 
+                    '%${keyword}%'
+                OR
+                    question_name
+                LIKE
+                    '%${keyword}%'
+                )
+            ORDER BY
+                question_id ${currentOrder}
+            LIMIT
+                #{pagination.startRecord}, #{pagination.pageSize}
+        ]]>
+    </select>
+
+    <select id="getRandomQuestions" parameterType="int" resultType="int">
+        <![CDATA[
+            SELECT
+                id
+            FROM
+                question
+            WHERE
+                is_deleted = 0
+            ORDER BY
+            RAND()
+            LIMIT
+                #{value}
+        ]]>
+    </select>
+
+    <insert id="saveQuestion" parameterType="com.malcolm.oes.model.UserQuestionVo" useGeneratedKeys="true" keyProperty="question.id">
+        <![CDATA[
+            INSERT
+            INTO
+                question
+                (
+                    question_name,
+                    user_id,
+                    answer_a,
+                    answer_b,
+                    answer_c,
+                    answer_d,
+                    question_answer,
+                    question_id,
+                    created_time,
+                    edited_time
+                )
+            VALUES
+                (
+                    #{question.questionTitle},
+                    #{user.id},
+                    #{question.answerA},
+                    #{question.answerB},
+                    #{question.answerC},
+                    #{question.answerD},
+                    #{question.answer},
+                    #{question.questionId},
+                    NOW(),
+                    NOW()
+                )
+        ]]>
+    </insert>
+
+    <select id="getQuestionRecordCount" resultType="int">
+        <![CDATA[
+            SELECT
+            COUNT(id)
+            FROM
+                question
+            WHERE
+                is_deleted = 0
+        ]]>
+    </select>
+
+    <select id="getAllQuestionCount" resultType="int">
+        <![CDATA[
+            SELECT
+            COUNT(id)
+            FROM
+                question
+        ]]>
+    </select>
+
+    <select id="getQuestionRecordCountByKeyword" parameterType="String" resultType="int">
+        <![CDATA[
+            SELECT
+            COUNT(id)
+            FROM
+                question
+            WHERE
+                is_deleted = 0
+            AND
+                (
+                    question_id
+                LIKE
+                    '%${value}%'
+                OR
+                    question_name
+                LIKE
+                    '%${value}%'
+                )
+        ]]>
+    </select>
+
+    <select id="getQuestionById" parameterType="int" resultMap="questionMap">
+        <![CDATA[
+            SELECT
+                id, question_id,
+                question_name,
+                answer_a,
+                answer_b,
+                answer_c,
+                answer_d,
+                question_answer
+            FROM
+                question
+            WHERE
+                id = #{id}
+        ]]>
+    </select>
+
+    <select id="getQuestionByName" parameterType="String" resultMap="questionMap">
+        <![CDATA[
+            SELECT
+                * 
+            FROM
+                question 
+            WHERE
+                question_id = #{name}
+            AND
+                is_deleted = 0
+        ]]>
+    </select>
+
+    <update id="updateQuestionStatusByIds" parameterType="String" >
+        <![CDATA[
+            UPDATE
+                question
+            SET
+                is_deleted = 1, edited_time = NOW()
+            WHERE
+                id
+            IN
+                (${value})
+        ]]>
+    </update>
+
+    <update id="updateUsedQuestions" parameterType="map">
+            UPDATE
+                question
+            SET
+                is_used = #{usedStatus}
+            WHERE
+                id
+            IN
+            <foreach collection="questionIds" item="item" index="index" open="(" close=")" separator=",">
+                ${item}
+            </foreach>
+    </update>
+
+</mapper>

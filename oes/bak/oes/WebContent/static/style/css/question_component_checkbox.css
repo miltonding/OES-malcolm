@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+/**
+* checkbox component in question management
+*/
+.checkbox {
+    display: inline-block;
+}
+.checkbox > input {
+    display: none;
+}
+.checkbox_label {
+    display: inline-block;
+}
+.checkbox > input + .checkbox_label:before {
+    content: "";
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: -3px;
+    background-color: #FFFFFF;
+    background-image: url("../../img/ICN_Unselected_15x15.png");
+    margin-right: 10px;
+}
+.checkbox > input:checked + .checkbox_label:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    background-image: url("../../img/ICN_Selected_15x15.png");
+    background-repeat: no-repeat;
+    background-position: 1px;
+}

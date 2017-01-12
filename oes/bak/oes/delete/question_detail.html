@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to login!</title>
+    <link rel="stylesheet" href="../../static/style/css/reset.css">
+    <link rel="stylesheet" href="../../static/style/css/question_component_checkbox.css">
+    <link rel="stylesheet" href="../../static/style/css/style.css">
+    <link rel="stylesheet" href="../../static/style/css/question_management.css">
+    <link rel="stylesheet" href="../../static/style/css/create_question.css">
+    <link rel="stylesheet" href="../../static/style/css/question_detail.css">
+  </head>
+  <body style="background-color: #D2DAE3">
+    <nav class="question_nav">
+      <img class="web_logo" src="../../static/style/img/LOGO_Web.png" />
+      <span class="web_title">Online Exam Web System</span>
+      <a href="#" class="language">中文</a>
+      <a href="#" class="logout">Logout</a>
+      <a href="#" class="userName">Malcolm Li</a>
+      <img class="user_icon" src="../../static/style/img/ICN_Web_PersonalInformation.png" />
+    </nav>
+    <div class="question_tab_div">
+      <ul>
+        <li class="question_management quesion_manage_active"><a href="#">Question Management</a></li>
+        <li class="exam_management"><a href="#">Exam Management</a></li>
+      </ul>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li class="first"><a href="#">Question Management</a> >&nbsp;</li>
+        <li class="second"><a href="#">Question List </a> >&nbsp;</li>
+        <li class="question_id">Q002088</li>
+      </ul>
+    </div>
+    <div class="question_content_div">
+      <ul>
+        <li class="item_name">Question ID:</li>
+        <li>
+          <input class="question_id" type="text" value="Q009898" />
+        </li>
+      </ul>
+      <ul>
+        <li class="item_name">Question:</li>
+        <li>
+          <textarea>which of the following is true?</textarea>
+        </li>
+      </ul>
+      <ul>
+        <li class="item_name">Answer:</li>
+          <ul class="inner_ul">
+            <li class="first">
+              <label>A</label>
+              <input readonly="readonly" type="text" value="It's helpful fo me" />
+            </li>
+            <li>
+              <label>B</label>
+              <input readonly="readonly" type="text" value="It's helpful fo you" />
+            </li>
+            <li>
+              <label>C</label>
+              <input readonly="readonly" class="active" type="text" value="It's helpful fo us" />
+            </li>
+            <li>
+              <label>D</label>
+              <input class="question_option" readonly="readonly" type="text" value="It's helpful fo her" />
+            </li>
+          </ul>
+      </ul>
+      <div class="btn_operate">
+        <button>Save</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+    
+    <div class="question_footer_div">
+      <div class="question_footer_content">Copyright &copyright; 2014 Augmentum, Inc. All Rights Reserved.</div>
+    </div>
+  </body>
+</html>

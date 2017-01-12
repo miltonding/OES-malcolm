@@ -1,0 +1,11 @@
+@CHARSET "utf-8";
+/**
+* Question detail page.
+*/
+body {
+    background-color: #D2DAE3;
+}
+.question_content_div input, textarea {
+    border: none;
+    outline: none;
+}

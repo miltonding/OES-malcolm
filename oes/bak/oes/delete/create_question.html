@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to login!</title>
+    <link rel="stylesheet" href="../../static/style/css/reset.css">
+    <link rel="stylesheet" href="../../static/style/css/question_component_checkbox.css">
+    <link rel="stylesheet" href="../../static/style/css/style.css">
+    <link rel="stylesheet" href="../../static/style/css/question_management.css">
+    <link rel="stylesheet" href="../../static/style/css/create_question.css">
+    <script type="text/javascript">
+        function changeBg(e) {
+            var parent1 = e.target.parentNode;
+            var parent2 = parent1.parentNode;
+            //console.log(parent1.parentNode);
+            var sibling = parent2.firstChild;
+            //console.log(sibling);
+            clean();
+            parent2.childNodes[5].style.cssText = "background-color: #D2DAE3"
+        }
+        function clean() {
+            var inputArray = document.getElementsByName("answer_input");
+            //console.log(inputArray);
+            for(var i=0; i< inputArray.length; i++) {
+            	inputArray[i].style.cssText = "background-color: #FFFFFF";
+            }
+        }
+    </script>
+  </head>
+  <body style="background-color: #D2DAE3">
+    <nav class="question_nav">
+      <img class="web_logo" src="../../static/style/img/LOGO_Web.png" />
+      <span class="web_title">Online Exam Web System</span>
+      <a href="#" class="language">中文</a>
+      <a href="#" class="logout">Logout</a>
+      <a href="#" class="userName">Malcolm Li</a>
+      <img class="user_icon" src="../../static/style/img/ICN_Web_PersonalInformation.png" />
+    </nav>
+    <div class="question_tab_div">
+      <ul>
+        <li class="question_management quesion_manage_active"><a href="#">Question Management</a></li>
+        <li class="exam_management"><a href="#">Exam Management</a></li>
+      </ul>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li class="first"><a href="#">Question Management</a> >&nbsp;</li>
+        <li class="second"><a href="#">Question List </a> >&nbsp;</li>
+        <li class="question_id">Q002088</li>
+      </ul>
+    </div>
+    <div class="question_content_div">
+      <ul>
+        <li class="item_name">Question ID:</li>
+        <li>
+          <input class="question_id" type="text" />
+        </li>
+      </ul>
+      <ul>
+        <li class="item_name">Question:</li>
+        <li>
+          <textarea></textarea>
+        </li>
+      </ul>
+      <ul>
+        <li class="item_name">Answer:</li>
+          <ul class="inner_ul">
+            <li>
+              <div class="radio">
+                <input onclick="changeBg(event)" name="answer" type="radio" id="custom_radio1">
+                <label class="radio_label" for="custom_radio1"></label>
+              </div>
+              <label>A</label>
+              <input name="answer_input" type="text" />
+            </li>
+            <li>
+              <div class="radio">
+                <input onclick="changeBg(event)" name="answer" type="radio" id="custom_radio2">
+                <label class="radio_label" for="custom_radio2"></label>
+              </div>
+              <label>B</label>
+              <input name="answer_input" type="text" />
+            </li>
+            <li>
+              <div class="radio">
+                <input onclick="changeBg(event)" name="answer" type="radio" checked="checked" id="custom_radio3">
+                <label class="radio_label" for="custom_radio3"></label>
+              </div>
+              <label>C</label>
+              <input name="answer_input" class="active" type="text" value="1111" />
+            </li>
+            <li>
+              <div class="radio">
+                <input onclick="changeBg(event)" name="answer" type="radio" id="custom_radio4">
+                <label class="radio_label" for="custom_radio4"></label>
+              </div>
+              <label>D</label>
+              <input name="answer_input" type="text" />
+            </li>
+          </ul>
+      </ul>
+      <div class="btn_operate">
+        <button>Save</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+    
+    <div class="question_footer_div">
+      <div class="question_footer_content">Copyright &copyright; 2014 Augmentum, Inc. All Rights Reserved.</div>
+    </div>
+  </body>
+</html>

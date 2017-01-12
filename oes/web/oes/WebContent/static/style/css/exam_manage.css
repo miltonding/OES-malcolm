@@ -1,0 +1,456 @@
+@charset "utf-8";
+/**
+* Question management page
+*/
+body {
+    background-color: #D2DAE3;
+}
+.top_nav {
+    height: 80px;
+    width: 1348px;
+    border: solid 1px;
+    position: relative;
+    background-color: #2E4358;
+}
+.top_nav .web_logo { 
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.top_nav .web_title {
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    color:#FFFFFF;
+    font-size: 24px;
+}
+.top_nav .language {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #FFFFFF;
+}
+.top_nav .logout {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    color: #FFFFFF;
+}
+.top_nav .username {
+    position: absolute;
+    right: 94px;
+    bottom: 10px;
+    color: #FFFFFF;
+}
+.top_nav .user_icon {
+    position: absolute;
+    right: 165px;
+    bottom: 10px;
+    color: #FFFFFF;
+}
+.exam_content_div {
+    width: 1240px;
+    min-height: 550px;
+    margin: 30px auto 0px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.exam_footer_div {
+    margin-top: 10px;
+    text-align: center;
+    height: 50px;
+}
+.exam_content_div .left {
+    width: 200px;
+    height: 500px;
+    float: left;
+    border-right: solid #9D9D9D 1px;
+}
+.exam_content_div .right {
+    float: right;
+    width: 1030px;
+    margin-bottom: 30px;
+}
+.exam_tab_div {
+    height: 40px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.exam_tab_div a {
+    color: #2E4358;
+}
+.exam_tab_div li {
+    width: 220px;
+    float: left;
+    list-style: none;
+    line-height: 40px;
+    font-size: 18px;
+    color: #2E4358;
+    text-align: center;
+}
+.exam_tab_div span {
+    float: left;
+    line-height: 40px;
+}
+.exam_tab_div .question_management {
+    margin-left: 20px;
+}
+.exam_tab_div .exam_management {
+    margin-left: 100px;
+}
+.manage_active {
+    background-color: #D2DAE3;
+}
+.exam_list_active {
+    background-color: #2E4358;
+    font-size: 14px;
+}
+.exam_list_active .active {
+    color: #FFFFFF;
+}
+.left ul {
+    float: left;
+    display: block;
+    margin-top: 50px;
+}
+.left a {
+    color: #2E4358;
+}
+.left li {
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: solid #2E4358 1px;
+}
+.right .question_list_content {
+    float: right;
+    border: solid 1px;
+    width: 980px;
+    min-height: 440px;
+    margin-top: 10px;
+    margin-right: 30px;
+    border: solid #2E4358 1px;
+    border-radius: 5px;
+}
+.search {
+    float: left;
+    margin-left: 18px;
+    position: relative;
+}
+.searchByDate {
+    border-radius: 5px;
+    float: right;
+    margin-left: 18px;
+    position: relative;
+    width: 319px;
+    height: 32px;
+    margin-right: 35px;
+    border: solid #296793 1px;
+    margin-top: 10px;
+}
+.right .search input {
+    border: solid #296793 1px;
+    border-radius: 5px;
+    margin-right: 30px;
+    height: 30px;
+    margin-top: 10px;
+    padding-right: 35px;
+    background-repeat: no-repeat;
+    background-position: 160px;
+    padding-left: 10px;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.right .searchByDate input {
+    border: solid #296793 1px;
+    border-radius: 5px;
+    height: 30px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: 160px;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    width:120px;
+}
+.separate_line {
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    margin-top: 5px;
+    float: right;
+}
+.search_icon {
+    position: absolute;
+    right: 42px;
+    top: 15px;
+}
+.exam_content {
+    width: 1030px;
+    float: left;
+}
+.exam_content li {
+    height: 40px;
+    text-align: center;
+    vertical-align: center;
+    float: left;
+    line-height: 40px;
+    color:#0A0A0A;
+    border-bottom: solid 1px #2E4358;
+}
+.exam_index {
+    width: 120px;
+}
+.exam_id {
+    width: 60px;
+}
+.exam_name {
+    padding-left: 45px;
+    width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.exam_effective_time {
+    padding-left: 45px;
+    width: 120px;
+}
+.exam_duration {
+    padding-left: 45px;
+    width: 110px;
+}
+.quesiton_operator {
+    padding-left: 45px;
+    width: 120px;
+}
+.exam_creator {
+    padding-left: 45px;
+    width: 80px;
+}
+.exam_edit {
+    padding-left: 70px;
+    width: 50px;
+}
+.exam_select {
+    width: 80px;
+}
+.button_date {
+    display: inline-block;
+    height: 32px;
+    width: 40px;
+    float: right;
+    background-color: #FFFFFF;
+    border: none;
+    color: #F3BF0C;
+}
+.behind_setting {
+    margin-top: 20px;
+}
+.pagination {
+    float: left;
+    margin-top: 40px;
+    margin-left: 340px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pagination a {
+    display: inline-block;
+    height: 20px;
+    font-size: 12px;
+    margin-top: 0px;
+    color: #5E5E5E;
+    line-height: 15px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.pagination input {
+    width: 20px;
+    height: 12px;
+    color: #FE9901;
+    border: solid 1px #5E5E5E;
+    text-align: center;
+}
+.pagination select {
+    width: 40px;
+    height: 15px;
+    font-size: 12px;
+    color: #FE9901;
+}
+.pagination label {
+    font-size: 12px;
+    color: #5E5E5E;
+}
+.pagination .active {
+    color: #FE9901;
+}
+.pagination button {
+    width: 24px;
+    height: 15px;
+    border: none;
+    background-color: #FE9901;
+    color: #FFFFFF;
+}
+.delete_exam {
+     margin-bottom: 20px;
+}
+.delete_exam button {
+    background-color: #FE9901;
+    border: none;
+    color: #FFFFFF;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 140px;
+    cursor: pointer;
+}
+.exam_dialog {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #2E4358;
+    left:50%;
+    top: 40%;
+    margin-left: -200px;
+    margin-top: -100px;
+    position: fixed;
+    z-index: 10000;
+    background-color: #FFFFFF;
+    display: none;
+}
+.exam_dialog .close_btn {
+    width: 22px;
+    height: 22px;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-image: url("../../img/BTN_Close_16x16.png");
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+.exam_dialog span {
+    text-align: center;
+    width: 400px;
+    font-size: 14px;
+    color: #0A0A0A;
+    margin-top: 70px;
+    display: block;
+}
+.exam_dialog button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #FE9901;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.yes_btn {
+    margin-left: 105px;
+}
+.no_btn {
+    margin-left: 30px;
+}
+.success_flash_msg {
+    width:250px;
+    height: 40px;
+    background-color: #00ff40;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.error_flash_msg {
+    width: 250px;
+    height: 40px;
+    background-color: #FF0000;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.tip_flash_msg {
+    display: none;
+    width: 350px;
+    height: 40px;
+    background-color: #FF0000;
+    position: fixed;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.orderArrow {
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: 2px;
+    background-image: url("../../img/ICN_Decrese_10x15.png");
+    background-repeat: no-repeat;
+}
+.orderArrowInverse {
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: 2px;
+    background-image: url("../../img/ICN_Increase_10x15.png");
+    background-repeat: no-repeat;
+}
+/**
+* Exam delete checkbox.
+*/
+.checkbox {
+    display: inline-block;
+}
+.checkbox > input {
+    display: none;
+}
+.checkbox_label {
+    display: inline-block;
+}
+.checkbox > input + .checkbox_label:before {
+    content: "";
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: -3px;
+    background-color: #FFFFFF;
+    background-image: url("../../img/ICN_Unselected_15x15.png");
+    margin-right: 10px;
+}
+.checkbox > input:checked + .checkbox_label:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    background-image: url("../../img/ICN_Selected_15x15.png");
+    background-repeat: no-repeat;
+    background-position: 1px;
+}
+.search_hidden_div {
+    display: none;
+}

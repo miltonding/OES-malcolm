@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:hdp="http://www.springframework.org/schema/hadoop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util" xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/cache
+        http://www.springframework.org/schema/cache/spring-cache.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+        <list>
+            <value>classpath:app.properties</value>
+        </list>
+        </property>
+    </bean>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${jdbc.driver}"></property>
+        <property name="jdbcUrl" value="${jdbc.url}"></property>
+        <property name="user" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+        <property name="maxPoolSize" value="20"></property>
+        <property name="minPoolSize" value="5"></property>
+        <property name="acquireIncrement" value="5"></property>
+        <property name="initialPoolSize" value="3"></property>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.malcolm.oes.model"/>
+        <property name="mapperLocations" value="classpath*:com/malcolm/oes/model/mysql/*Mapper.xml"></property>
+    </bean>
+
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
+    </bean>
+
+    <bean id="baseDao" abstract="true">
+        <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+    </bean>
+
+    <bean id="questionDao" class="com.malcolm.oes.dao.mybatis.QuestionDaoImpl" parent="baseDao"/>
+
+    <bean id="userDao" class="com.malcolm.oes.dao.mybatis.UserDaoImpl" parent="baseDao"/>
+
+    <bean id="examDao" class="com.malcolm.oes.dao.mybatis.ExamDaoImpl" parent="baseDao"></bean>
+
+    <!-- Old Jdbc template -->
+    <!--
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="baseDao" abstract="true">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="questionDao" class="com.malcolm.oes.dao.jdbc.mysql.QuestionDaoImpl" parent="baseDao"/>
+
+    <bean id="userDao" class="com.malcolm.oes.dao.jdbc.mysql.UserDaoImpl" parent="baseDao"/>
+    -->
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--
+    <bean id="logMethodTimeAdvice" class="com.malcolm.oes.advice.LogMethodTimeAspect"/>
+    -->
+    <bean id="logMethodTimeAdvice" class="com.malcolm.oes.advice.LogMethodTime"/>
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="delete*" propagation="REQUIRED" read-only="false" rollback-for="com.malcolm.oes.exception.ServiceException"/>
+            <tx:method name="update*" propagation="REQUIRED" read-only="false" rollback-for="com.malcolm.oes.exception.ServiceException"/>
+            <tx:method name="save*" propagation="REQUIRED" read-only="false" rollback-for="com.malcolm.oes.exception.ServiceException"/>
+            <tx:method name="*" propagation="SUPPORTS" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut expression="execution(* com.malcolm.oes.service..*.*(..))" id="pc"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pc" order="2"/>
+        <aop:advisor advice-ref="logMethodTimeAdvice" pointcut-ref="pc" order="1"/>
+        <!--
+        <aop:aspect id="logMethodTimeAspect" ref="logMethodTimeAdvice">
+            <aop:pointcut id="businessService" expression="execution(* com.malcolm.oes.service..*.*(..))" />
+            <aop:around pointcut-ref="businessService" method="doAround"/>
+            <aop:before pointcut-ref="businessService" method="doBefore"/>
+            <aop:after pointcut-ref="businessService" method="doAfter"/>
+            <aop:after-throwing pointcut-ref="businessService" method="doThrowing" throwing="ex"/>
+        </aop:aspect>
+        -->
+    </aop:config>
+
+    <bean id="userService" class="com.malcolm.oes.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="questionService" class="com.malcolm.oes.service.impl.QuestionServiceImpl">
+        <property name="questionDao" ref="questionDao"/>
+    </bean>
+
+    <bean id="examService" class="com.malcolm.oes.service.impl.ExamServiceImpl">
+        <property name="examDao" ref="examDao"></property>
+        <property name="questionDao" ref="questionDao"></property>
+    </bean>
+
+    <bean id="topBlock" class="com.malcolm.oes.block.TopBlock">
+        <property name="template" value="/WEB-INF/jsp/block/top.jsp" />
+    </bean>
+
+    <bean class="com.malcolm.oes.util.SpringUtil"/>
+</beans>

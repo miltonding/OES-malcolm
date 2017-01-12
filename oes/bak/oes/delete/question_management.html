@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to login!</title>
+    <link rel="stylesheet" href="../../static/style/css/reset.css">
+    <link rel="stylesheet" href="../../static/style/css/question_component_checkbox.css">
+    <link rel="stylesheet" href="../../static/style/css/style.css">
+    <link rel="stylesheet" href="../../static/style/css/question_management.css">
+    <script type="text/javascript">
+        function close_dialog() {
+            var close_obj = document.getElementById("question_dialog_div");
+            close_obj.style.cssText = "display:none;"
+        }
+        function open_close_dialog() {
+            var close_obj = document.getElementById("question_dialog_div");
+            close_obj.style.cssText = "display:block;"
+        }
+    </script>
+  </head>
+  <body style="background-color: #D2DAE3">
+    <nav class="question_nav">
+      <img class="web_logo" src="../../static/style/img/LOGO_Web.png" />
+      <span class="web_title">Online Exam Web System</span>
+      <a href="#" class="language">中文</a>
+      <a href="#" class="logout">Logout</a>
+      <a href="#" class="userName">Malcolm Li</a>
+      <img class="user_icon" src="../../static/style/img/ICN_Web_PersonalInformation.png" />
+    </nav>
+    <div class="question_tab_div">
+      <ul>
+        <li class="question_management quesion_manage_active"><a href="#">Question Management</a></li>
+        <li class="exam_management"><a href="#">Exam Management</a></li>
+      </ul>
+    </div>
+    <div class="question_content_div">
+      <div class="left">
+        <ul>
+          <li class="quesion_list_active"><a class="active" href="#">Question List</a></li>
+          <li><a href="#">Create Question</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="search">
+          <input type="text" placeholder="Please input the keyword" />
+          <a href="#"><img class="search_icon" alt="search" src="../../static/img/ICN_Search_15x20.png"></a>
+        </div>
+        <div class="question_list_content">
+          <div class="question_top">
+            <ul>
+              <li class="question_id">ID</li>
+              <li class="question_descripe">Description</li>
+              <li class="question_edit">Edit</li>
+              <li class="quesiton_operator">
+                <img alt="select" src="../../static/img/ICN_Unselected_15x15.png">
+              </li>
+            </ul>
+          </div>
+          <div class="question_list checkbox">
+            <ul>
+              <li class="question_index">1</li>
+              <li class="question_id">Q002089</li>
+              <li class="question_descripe">which of the following is coorect?</li>
+              <li class="question_edit">
+                <a href="#" ><img alt="edit" src="../../static/img/ICN_Edit_15x15.png"></a>
+              </li>
+              <li class="quesiton_operator">
+                <div class="question_select checkbox">
+                  <input name="question_checkbox" type="checkBox" id="custom_checkbox1" />
+                  <label class="checkbox_label" for="custom_checkbox1"></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="question_list checkbox">
+            <ul>
+              <li class="question_index">1</li>
+              <li class="question_id">Q002089</li>
+              <li class="question_descripe">which of the following is coorect?</li>
+              <li class="question_edit">
+                <a href="#" ><img alt="edit" src="../../static/img/ICN_Edit_15x15.png"></a>
+              </li>
+              <li class="quesiton_operator">
+                <div class="question_select checkbox">
+                  <input onclick="change_selected()" name="question_checkbox" type="checkBox" id="custom_checkbox2" />
+                  <label class="checkbox_label" for="custom_checkbox2"></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          
+          <div class="question_operator">
+            <div class="pagation">
+              <a href="#"><img alt="left" src="../../static/img/BTN_PageLeft_20x15.png"></a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">...</a>
+              <a href="#">65</a>
+              <a href="#"><img alt="right" src="../../static/img/BTN_PageRight_20x15.png"></a>
+              <select value="10">
+                  <option>10</option>
+              </select>
+              <label>Per page</label>
+              <input type="text" />
+              <button>Go</button>
+            </div>
+            <div class="question_delete">
+              <button onclick="open_close_dialog()">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="question_footer_div">
+      <div class="question_footer_content">Copyright &copyright; 2014 Augmentum, Inc. All Rights Reserved.</div>
+    </div>
+    
+    <div id="question_dialog_div" class="question_dialog">
+      <button id="delete_dialog" class="close_btn" onclick="close_dialog()"></button>
+      <span>Are you sure delete the selected options?</span>
+      <button class="yes_btn">Yes</button>
+      <button class="no_btn">No</button>
+    </div>
+  </body>
+</html>

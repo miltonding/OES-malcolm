@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to create question!</title>
+    <link rel="stylesheet" href="static/style/css/reset.css">
+    <link rel="stylesheet" href="static/style/css/create_exam.css">
+    <link rel="stylesheet" href="static/style/css/manage_exam.css">
+    <script type="text/javascript" src="static/style/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="static/style/js/common.js"></script>
+  </head>
+  <body>
+    <nav class="top_nav">
+      <img class="web_logo" src="static/style/img/LOGO_Web.png" />
+      <span class="web_title">Online Exam Web System</span>
+      <a href="#" class="language">中文</a>
+      <a id="logout" href="${pageContext.request.contextPath}/page/user/logout" class="logout">Logout</a>
+      <a href="#" class="username">Malcolm Li</a>
+      <img class="user_icon" src="static/style/img/ICN_Web_PersonalInformation.png" />
+    </nav>
+    <div class="exam_tab_div">
+      <ul>
+        <li class="question_management"><a href="${pageContext.request.contextPath }/page/dashBoard/myoes">Question Management</a></li>
+        <li class="exam_management manage_active"><a href="#">Exam Management</a></li>
+      </ul>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li class="first"><a href="${pageContext.request.contextPath }/page/dashBoard/myoes">Exam Management</a> >&nbsp;</li>
+        <li class="second"><a href="#">Exam List </a> >&nbsp;</li>
+        <li class="question_id">E00295</li>
+      </ul>
+    </div>
+
+    <!-- Save form start -->
+    <form id="saveForm" action="${pageContext.request.contextPath }/page/question/saveQuestion" method="post">
+      <div class="exam_content_div">
+        <ul>
+          <li class="item_name">Exam Name:</li>
+          <li><input name="questionId" id="questionIdInput" class="question_id" type="text"/></li>
+          <li id="examIdMsg" class="error_msg">Exam id's length should in 1~20.</li>
+        </ul>
+        <ul>
+          <li class="item_name">Description:</li>
+          <li><textarea name="questionTitle" id="questionTextarea" ></textarea></li>
+          <li id="examMsg" class="error_msg">Exam name's length should in 1~200.</li>
+        </ul>
+        <ul>
+          <li class="item_name">Effective Time:</li>
+          <li><input name="questionTitle" id="questionTextarea" type="datetime-local"></input></li>
+          <li id="questionMsg" class="error_msg">Exam name's length should in 1~200.</li>
+        </ul>
+        <ul>
+          <li class="item_name">Duration:</li>
+          <li>
+            <select class="duration">
+              <option>60</option>
+            </select>
+            S
+          </li>
+          <li id="questionMsg" class="error_msg">Exam name's length should in 1~200.</li>
+        </ul>
+        <ul class="question_setting">
+          <li class="item_name">Question Setting:</li>
+          <li>
+            <span>Quetion Quantity:</span><input type="text"/>
+            <span>Quetion Point:</span><input type="text"/>
+          </li>
+          <li class="behind_setting">
+            <span>Total Score:</span><input type="text"/>
+            <span>Pass Criteria:</span><input type="text"/>
+          </li>
+        </ul>
+        <div class="btn_operate">
+          <button type="button" onclick="saveQuestion()">Save</button>
+          <button type="button" onclick="cancel()">Cancel</button>
+        </div>
+      </div>
+    </form>
+    <!-- Save form over -->
+
+    <div class="exam_footer_div">
+      <div class="exam_footer_content">Copyright &copyright; 2014 Augmentum, Inc. All Rights Reserved.</div>
+    </div>
+    <!-- Flash message start -->
+
+    <div id="tipFlashMsg" class="tip_flash_msg"></div>
+    <!-- Flash message over -->
+  </body>
+</html>

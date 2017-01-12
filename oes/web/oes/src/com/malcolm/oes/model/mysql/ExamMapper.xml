@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.malcolm.oes.model.Exam">
+
+    <resultMap type="Exam" id="examMap">
+        <id column="id" property="id"/>
+        <result column="exam_name" property="examName"/>
+        <result column="exam_description" property="examDescription"/>
+        <result column="exam_duration" property="examDuration"/>
+        <result column="question_quantity" property="questionQuantity"/>
+        <result column="question_point" property="questionPoint"/>
+        <result column="total_score" property="totalScore"/>
+        <result column="pass_criteria" property="passCriteria"/>
+        <result column="pass_rate" property="passRate"/>
+        <result column="average_score" property="averageScore"/>
+        <result column="effective_time" property="effectiveTime"/>
+        <result column="id_draft" property="isDraft"/>
+    </resultMap>
+
+    <resultMap type="com.malcolm.oes.model.ExamVo" id="examVoMap" extends="examMap">
+        <result column="user_name" property="userName"/>
+    </resultMap>
+
+    <insert id="saveExam" parameterType="map" useGeneratedKeys="true" keyProperty="exam.id">
+        <![CDATA[
+            INSERT
+            INTO
+                exam
+                (
+                    exam_name,
+                    exam_description,
+                    effective_time,
+                    exam_duration,
+                    question_quantity,
+                    question_point,
+                    total_score,
+                    pass_criteria,
+                    is_draft,
+                    user_id
+                )
+            VALUES
+                (
+                    #{exam.examName},
+                    #{exam.examDescription},
+                    #{exam.effectiveTime},
+                    #{exam.examDuration},
+                    #{exam.questionQuantity},
+                    #{exam.questionPoint},
+                    #{exam.totalScore},
+                    #{exam.passCriteria},
+                    #{exam.isDraft},
+                    #{userId}
+                )
+        ]]>
+    </insert>
+
+    <insert id="saveExamPaper" parameterType="map" >
+        INSERT
+        INTO
+            question_exam(question_id, exam_id)
+        VALUES
+        <foreach collection="questionIds" separator="," index="index" item="id">
+            (#{id}, ${examId})
+        </foreach>
+    </insert>
+
+    <select id="findExamList" parameterType="com.malcolm.oes.model.PaginationVo" resultMap="examVoMap">
+        SELECT
+            e.id,
+            e.exam_name,
+            e.effective_time,
+            e.exam_duration,
+            u.user_name
+        FROM
+            exam e,
+            user u
+        WHERE
+            is_draft = 0
+        AND
+            is_deleted = 0
+        AND
+            e.user_id = u.id
+        <if test="keyword != '' and keyword != null">
+            AND
+               (
+                   e.id
+               LIKE 
+                   '%${keyword}%'
+               OR
+                   e.exam_name
+               LIKE
+                   '%${keyword}%'
+               )
+        </if>
+
+        <if test="startDate != '' and endDate != ''">
+            AND
+                effective_time
+            BETWEEN
+                #{startDate}
+            AND
+                #{endDate}
+        </if>
+
+        <if test="orderParam != '' and orderParam != null">
+            ORDER BY
+                ${orderParam}
+            <if test="currentOrder != '' and currentOrder != null">
+                ${currentOrder}
+            </if>
+        </if>
+
+        <if test="pagination != null">
+            LIMIT
+                #{pagination.startRecord}, #{pagination.pageSize}
+        </if>
+    </select>
+
+    <select id="getExamRecordCount" parameterType="String" resultType="int">
+            SELECT
+            COUNT(id)
+            FROM
+                Exam e
+            WHERE
+                is_draft = 0
+            <if test="_parameter != ''">
+            AND
+                    e.id
+                LIKE 
+                    '%${value}%'
+                OR
+                    e.exam_name
+                LIKE
+                    '%${value}%'
+            </if>
+    </select>
+
+    <update id="updateExamStatus" parameterType="String">
+        <![CDATA[
+            UPDATE
+                exam
+            SET
+                is_deleted = 1
+            WHERE
+                id
+            IN
+                (${value})
+        ]]>
+    </update>
+
+</mapper>

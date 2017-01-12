@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to question management!</title>
+    <link rel="stylesheet" href="static/style/css/reset.css">
+    <link rel="stylesheet" href="static/style/css/manage_exam.css">
+    <script type="text/javascript" src="static/style/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="static/style/js/common.js"></script>
+    <script type="text/javascript">
+        function closeDialog() {
+            var closeObj = document.getElementById("examDialogDiv");
+            closeObj.style.cssText = "display:none;"
+        }
+        function openCloseDialog() {
+            var closeObj = document.getElementById("examDialogDiv");
+            closeObj.style.cssText = "display:block;"
+        }
+    </script>
+  </head>
+  <body>
+    <nav class="top_nav">
+      <img class="web_logo" src="static/style/img/LOGO_Web.png" />
+      <span class="web_title">Online Exam Web System</span>
+      <a href="#" class="language">中文</a>
+      <a id="logout" href="${pageContext.request.contextPath}/page/user/logout" class="logout">Logout</a>
+      <a href="#" class="username">Malcolm Li</a>
+      <img class="user_icon" src="static/style/img/ICN_Web_PersonalInformation.png" />
+    </nav>
+    <div class="exam_tab_div">
+      <ul>
+        <li class="question_management"><a href="${pageContext.request.contextPath }/page/dashBoard/myoes">Question Management</a></li>
+        <li class="exam_management manage_active"><a href="#">Exam Management</a></li>
+      </ul>
+    </div>
+    <div class="exam_content_div">
+      <div class="left">
+        <ul>
+          <li class="exam_list_active"><a class="active" href="${pageContext.request.contextPath }/page/dashBoard/myoes">Exam List</a></li>
+          <li><a href="${pageContext.request.contextPath }/page/question/createQuestion">Create Exam</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <!-- Search form start -->
+        <form id="searchForm" action="${pageContext.request.contextPath }/page/dashBoard/myoes" method="post">
+          <div class="search">
+            <input value="" maxlength="10" id="keyword" name="keyword" type="text" placeholder="Please input the keyword"/>
+            <a href="#"><img onclick="search()" class="search_icon" alt="search" src="static/img/ICN_Search_15x20.png"></a>
+          </div>
+        </form>
+        <form id="searchFormByDate" action="${pageContext.request.contextPath }/page/dashBoard/myoes" method="post">
+          <div class="searchByDate">
+            <button class="button_date">date</button>
+            <input maxlength="20" id="endDate" name="startDate" type="date"/>
+            <span class="separate_line">——</span>
+            <input maxlength="20" id="startDate" name="endDate" type="date"/>
+          </div>
+        </form>
+        <!-- Search form over -->
+        <div class="question_list_content">
+          <div class="exam_content">
+            <ul>
+              <li class="exam_index"></li>
+              <li class="exam_id">ID<label class="orderArrow"></label></li>
+              <li class="exam_name">Name<label class="orderArrow"></label></li>
+              <li class="exam_effective_time">Effective Time<label class="orderArrow"></label></li>
+              <li class="exam_duration">Duration(Mins)</li>
+              <li class="exam_creator">Creator</li>
+              <li class="exam_edit">Edit</li>
+              <li class="exam_operator">
+                <div class="exam_select checkbox">
+                  <input onclick="checkedAll()" type="checkBox" id="allCheckedCheckbox" />
+                  <label class="checkbox_label" for="allCheckedCheckbox"></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Delete form start -->
+          <form id="deleteForm" action="${pageContext.request.contextPath }/page/question/deleteQuestionByIds" method="post">
+              <div class="exam_content checkbox">
+                <ul>
+                  <li class="exam_index">1</li>
+                  <li class="exam_id">E002059</li>
+                  <li class="exam_name">Performance to46486</li>
+                  <li class="exam_effective_time">2014-06-28 11:20</li>
+                  <li class="exam_duration">60</li>
+                  <li class="exam_creator">Malcolm Li</li>
+                  <li class="exam_edit"><a href="#" ><img alt="edit" src="static/img/ICN_Edit_15x15.png"></a></li>
+                  <li class="exam_operator">
+                    <div class="exam_select checkbox">
+                      <input onclick="checkedAll()" type="checkBox" id="CheckedCheckbox" />
+                      <label class="checkbox_label" for="CheckedCheckbox"></label>
+                    </div>
+                  </li>
+                </ul> 
+              </div>
+          </form>
+          <!-- Delete form over -->
+
+          <div class="exam_operator">
+            <div class="pagation">
+              <a href="#"><img alt="left" src="static/img/BTN_PageLeft_20x15.png"></a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">...</a>
+              <a href="#">65</a>
+              <a href="#"><img alt="right" src="static/img/BTN_PageRight_20x15.png"></a>
+              <select value="10">
+                  <option>10</option>
+              </select>
+              <label>Per page</label>
+              <input type="text" />
+              <button>Go</button>
+            </div>
+            <div class="delete_exam">
+              <button onclick="openCloseDialog()">Delete</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="exam_footer_div">
+      <div class="exam_footer_content">Copyright &copyright; 2014 Augmentum, Inc. All Rights Reserved.</div>
+    </div>
+
+    <div id="examDialogDiv" class="exam_dialog">
+      <button class="close_btn" onclick="closeDialog()"></button>
+      <span>Are you sure delete the selected options?</span>
+      <button onclick="deleteQuestions()" id="yes_btn" class="yes_btn">Yes</button>
+      <button onclick="closeDialog()" id="no_btn" class="no_btn">No</button>
+    </div>
+
+    <!-- Flash message start -->
+
+    <div id="tipFlashMsg" class="tip_flash_msg"></div>
+    <!-- Flash message over -->
+  </body>
+</html>

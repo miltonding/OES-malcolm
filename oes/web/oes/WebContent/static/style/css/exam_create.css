@@ -1,0 +1,288 @@
+@CHARSET "utf-8";
+/**
+* Create exam page
+*/
+body {
+    background-color: #D2DAE3;
+}
+.breadcrumb {
+    margin-left: 20px;
+}
+.breadcrumb li {
+    float: left;
+    margin-top: 10px;
+}
+.breadcrumb a {
+    color: #0A0A0A;
+    font-size: 12px;
+}
+.breadcrumb .active {
+    color: #5E5E5E;
+    font-size: 12px;
+    line-height: 19px;
+}
+.exam_content_div {
+    margin-top: 40px;
+}
+.exam_content_div  ul {
+    margin-top: 30px;
+    overflow: hidden;
+}
+.exam_content_div  li {
+    float: left;
+}
+.exam_content_div input, textarea {
+    border-radius: 3px;
+    border: solid 1px #2E4358;
+    color: #0A0A0A;
+    resize: none;
+    height: 30px;
+}
+.exam_content_div .item_name {
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 300px;
+}
+.exam_content_div .inner_ul {
+    width: 750px;
+    float: left;
+    margin-top: 0px;
+}
+.exam_content_div .inner_ul li {
+    margin-bottom: 20px;
+}
+.exam_content_div .inner_ul input[type='radio'] {
+    margin-right: 10px;
+}
+.exam_content_div .inner_ul label {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    line-height: 14px;
+}
+.exam_content_div .inner_ul input {
+    color: #0A0A0A;
+    font-size: 14px;
+}
+.exam_content_div .inner_ul input[type='text'] {
+    width: 445px;
+    margin-right: 10px;
+    text-indent: 20px;
+}
+.exam_content_div textarea {
+    width: 480px;
+    height: 80px;
+    font-size: 14px;
+    font-family: Arial,Reular;
+    margin-top: 10px;
+}
+.exam_content_div .exam_id {
+    width: 150px;
+    height: 30px;
+}
+.question_setting {
+    height: 100px;
+}
+.question_setting span {
+    width: 120px;
+    height: 25px;
+    display: inline-block;
+}
+.question_setting input{
+    width: 80px;
+    text-align: center;
+}
+.btn_operate button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: #FE9901;
+    border-radius: 5px;
+    margin-right: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.duration {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+.right_span {
+    margin-left:30px;
+}
+.exam_date {
+    height: 30px;
+}
+.exam_time {
+    height: 30px;
+    margin-left:30px;
+}
+.behind_setting {
+    margin-left: 430px;
+}
+.btn_operate {
+    margin-left: 460px;
+    margin-top: 50px;
+}
+.inner_ul .active {
+    background-color: #D2DAE3;
+}
+.inner_ul .first {
+    margin-top: 10px;
+}
+/*
+* Radio button background picture
+*/
+.radio {
+    display: inline-block;
+}
+.radio > input {
+    display: none;
+}
+.radio_label {
+    display: inline-block;
+    width: 20px;
+}
+.radio > input + .radio_label:before {
+    content: "";
+    margin-left: -1px;
+    margin-top: 1px;
+    width: 20px;
+    height: 18px;
+    text-align: left;
+    display: inline-block;
+    background-color: #FFFFFF;
+    background-image: url("../../img/BTN_Radio_Unselected_16x16.png");
+    background-repeat: no-repeat;
+    background-position: 2px;
+}
+.radio > input:checked + .radio_label:before {
+    content: "";
+    margin-left: -1px;
+    width: 20px;
+    height: 18px;
+    text-align: left;
+    display: inline-block;
+    background-color: #FFFFFF;
+    background-image: url("../../img/BTN_Radio_Selected_16x16.png");
+    background-repeat: no-repeat;
+    background-position: 2px;
+}
+.radio > input:checked + .question_option:before {
+    background-color: #00ff40;
+   
+}
+/*
+* Tip message
+*/
+.success_flash_msg {
+    width:250px;
+    height: 40px;
+    background-color: #00ff40;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.error_msg {
+    line-height: 30px;
+    margin-left: 20px;
+    color: #FF0000;
+    display: none;
+}
+ul .inner_ul .error_msg {
+    width: 300px;
+}
+.question_quantity_error_msg {
+    width: 300px;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #FF0000;
+    visibility: hidden;
+    position: relative;
+    top: -40px;
+}
+.question_point_error_msg {
+    width: 300px;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #FF0000;
+    visibility: hidden;
+    position: relative;
+    top: -50px;
+}
+.pass_criteria_error_msg {
+    width: 300px;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #FF0000;
+    visibility: hidden;
+    position: relative;
+    top: -40px;
+    left: 870px;
+}
+li i {
+    color: #FE9901;
+}
+.exam_warn_dialog {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #2E4358;
+    left:50%;
+    top: 40%;
+    margin-left: -200px;
+    margin-top: -100px;
+    position: fixed;
+    z-index: 10000;
+    background-color: #FFFFFF;
+    display: none;
+}
+.exam_warn_dialog .close_btn {
+    width: 22px;
+    height: 22px;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-image: url("../../img/BTN_Close_16x16.png");
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+.exam_warn_dialog span {
+    text-align: center;
+    width: 400px;
+    font-size: 14px;
+    color: #0A0A0A;
+    margin-top: 70px;
+    display: block;
+}
+.exam_warn_dialog button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #FE9901;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.yes_btn {
+    margin-left: 105px;
+}
+.no_btn {
+    margin-left: 30px;
+}
+.present_question_quantity {
+    color: red;
+}
+.is_draft {
+    display: none;
+}

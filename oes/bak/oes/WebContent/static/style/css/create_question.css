@@ -1,0 +1,166 @@
+@CHARSET "utf-8";
+/**
+* create question page
+*/
+.breadcrumb li {
+    float: left;
+    margin-top: 10px;
+}
+.breadcrumb .first {
+    width: 145px;
+    margin-left: 20px;
+}
+.breadcrumb a {
+    color: #0A0A0A;
+    font-size: 12px;
+}
+.breadcrumb .question_id {
+    color: #5E5E5E;
+    font-size: 12px;
+    line-height: 19px;
+}
+.question_content_div {
+    margin-top: 40px;
+}
+.question_content_div  ul {
+    margin-top: 30px;
+    overflow: hidden;
+}
+.question_content_div  li {
+    float: left;
+}
+.question_content_div input, textarea{
+    border-radius: 3px;
+    border: solid 1px #2E4358;
+    color: #0A0A0A;
+    resize: none;
+    height: 20px;
+}
+.question_content_div .item_name {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 300px;
+}
+.question_content_div .inner_ul {
+    width: 850px;
+    float: left;
+    margin-top: 0px;
+}
+.question_content_div .inner_ul li {
+    margin-bottom: 20px;
+}
+.question_content_div .inner_ul input[type='radio'] {
+    margin-right: 10px;
+}
+.question_content_div .inner_ul label {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    line-height: 14px;
+}
+.question_content_div .inner_ul input {
+    color: #0A0A0A;
+    font-size: 14px;
+}
+.question_content_div .inner_ul input[type='text'] {
+    width: 445px;
+    margin-right: 10px;
+    text-indent: 20px;
+}
+.question_content_div textarea {
+    width: 480px;
+    height: 80px;
+    font-size: 14px;
+    font-family: Arial,Reular;
+    margin-top: 10px;
+}
+.question_content_div .question_id {
+    width: 150px;
+    height: 30px;
+}
+.btn_operate button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: #FE9901;
+    border-radius: 5px;
+    margin-right: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.btn_operate {
+    margin-left: 460px;
+    margin-top: 30px;
+}
+.inner_ul .active {
+    background-color: #D2DAE3;
+}
+.inner_ul .first {
+    margin-top: 10px;
+}
+/*
+**radio button background picture
+*/
+.radio {
+    display: inline-block;
+}
+.radio > input {
+    display: none;
+}
+.radio_label {
+    display: inline-block;
+    width: 20px;
+}
+.radio > input + .radio_label:before {
+    content: "";
+    margin-left: -1px;
+    margin-top: 1px;
+    width: 20px;
+    height: 18px;
+    text-align: left;
+    display: inline-block;
+    background-color: #FFFFFF;
+    background-image: url("../../img/BTN_Radio_Unselected_16x16.png");
+    background-repeat: no-repeat;
+    background-position: 2px;
+}
+.radio > input:checked + .radio_label:before {
+    content: "";
+    margin-left: -1px;
+    width: 20px;
+    height: 18px;
+    text-align: left;
+    display: inline-block;
+    background-color: #FFFFFF;
+    background-image: url("../../img/BTN_Radio_Selected_16x16.png");
+    background-repeat: no-repeat;
+    background-position: 2px;
+}
+.radio > input:checked + .question_option:before {
+    background-color: #00ff40;
+   
+}
+.flash_msg {
+    width:250px;
+    height: 40px;
+    background-color: #00ff40;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    margin-left: -50px;
+    margin-top: -40px;
+    z-index: 80000;
+    text-align: center;
+    line-height: 40px;
+    boder-radius: 5px;
+}
+.error_msg {
+    line-height: 30px;
+    margin-left: 20px;
+    color: #FF0000;
+    display: none;
+}
+ul .inner_ul .error_msg {
+    width: 300px;
+}
